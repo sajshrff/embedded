@@ -28,7 +28,6 @@ void *alignedMalloc(size_t bytes, size_t aligned)
     *((size_t *) p2 - sizeof(size_t)) = (size_t) p1;
     
     return p2;
-    
 }
 
 void aligned_free(void *p)
